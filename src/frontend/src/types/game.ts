@@ -156,13 +156,13 @@ export const LANE_BOT: readonly number[] = [28, 96, 180, 264, 332];
 export const LANE_HOR: readonly number[] = [161, 170, 180, 190, 199];
 
 // ── World physics ─────────────────────────────────────────────────────────────
-export const SPAWN_Z = 28; // obstacles spawn this many yards ahead
+export const SPAWN_Z = 10; // obstacles spawn 10 yards ahead — visible within ~2s
 export const COLLISION_Z = 1.6; // yards — collision fires here
-export const BASE_SPEED = 3.5; // yards/sec at game start (slower = more readable)
-export const MAX_SPEED = 7.0;
-export const SPEED_RAMP = 0.04; // yards/sec per second (gentle ramp)
-export const ROW_SPACING = 16; // yards between tile rows (more breathing room)
-export const FIRST_ROW_Z = 22; // first obstacle appears this far in
+export const BASE_SPEED = 5.0; // yards/sec — snappy feel from snap
+export const MAX_SPEED = 9.0;
+export const SPEED_RAMP = 0.08; // yards/sec per second
+export const ROW_SPACING = 8; // yards between tile rows — tight waves
+export const FIRST_ROW_Z = 3; // first obstacle spawns almost immediately
 export const GRAVITY_PX = 600; // px/sec² for jump
 export const JUMP_VY = 220; // px/sec initial jump velocity
 export const BREAK_DUR = 0.33; // seconds for break particle animation
